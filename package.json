@@ -1,0 +1,41 @@
+{
+  "name": "nuxt-spa-starter",
+  "version": "1.0.0",
+  "engines": {
+    "node": "9.4.0",
+    "npm": "6.0.1"
+  },
+  "description": "Template used to start a Nuxt SPA application",
+  "author": "Jean-jacques AKAKPO <akakpo.jeanjacques@gmail.com>",
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3500"
+    }
+  },
+  "scripts": {
+    "dev": "nuxt --spa",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "heroku-postbuild": "npm run build",
+    "hd": "heroku config:set NPM_CONFIG_PRODUCTION=false && heroku config:set HOST=0.0.0.0 && heroku config:set NODE_ENV=production && git push heroku master"
+  },
+  "dependencies": {
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "nuxt": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1"
+  }
+}
